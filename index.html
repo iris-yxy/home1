@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="title">Inventory</div>
+        <div class="tabs"></div>
+        <ul class="list">
+        </ul>
+    </div>
+
+    <style>
+        .item
+        {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            font-size: 20px;
+            font-weight: 400;
+            margin: 10px;
+            background-color: #eee;
+            height: 40px;
+            width: 95%;
+            border-radius: 20px;
+            align-items: center; 
+            cursor:pointer;
+            border: 1px solid #ccc;
+            user-select: none;
+        }
+        .item:hover{
+            background-color: #ddd;
+        }
+        .tab:hover{
+            background-color: #ddd;
+        }
+        .item.selected{
+            background-color: rgb(93, 209, 93);
+            color: white;
+        }
+        .list{
+            margin: 30px;
+            background-color: white;
+        }
+        .tab{
+            justify-content: center;
+            text-align: center;
+            font-size: 20px;
+            font-weight: 300;
+            margin: 25px;
+            background-color: #eee;
+            height: 40px;
+            width: 150px;
+            border-radius: 20px;
+            align-items: center; 
+            cursor:pointer;
+            border:none;
+        }
+        .tab.active{
+            background-color: rgb(93, 209, 93);
+            color: white;
+        }
+        .tabs{
+            display: flex;
+            justify-content: space-between;
+            background-color: white;
+            margin: 30px;
+            height: 80px;
+            border-radius: 20px;
+            
+        }
+        .title{
+            color: white;
+            text-align: center;
+            font-size: 40px;
+            font-weight: 700;
+        }
+        .container{
+            padding-top: 30px;
+            height: 80px;
+            background-color:rgb(193, 167, 224);
+            border-radius: 20px;
+        }
+    </style>
+    <script src="script.js"></script>
+</body>
+</html>
